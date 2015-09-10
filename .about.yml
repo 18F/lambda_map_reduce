@@ -1,0 +1,66 @@
+---
+# .about.yml project metadata
+#
+# Short name that acts as the project identifier (required)
+name: lambda_map_reduce
+
+# Full proper name of the project (required)
+full_name: Lambda MapReduce
+
+# The type of content in the repo
+# values: app, docs, policy
+type: app
+
+# Describes whether a project team, working group/guild, etc. owns the repo (required)
+# values: guild, working-group, project
+owner_type: project
+
+# Maturity stage of the project (required)
+# values: discovery, alpha, beta, live
+stage: live
+
+# Whether or not the project is actively maintained (required)
+# values: active, deprecated
+status: active
+
+# Description of the project
+description: A MapReduce implementation for use with lambdas
+
+# Should be 'true' if the project has a continuous build (required)
+# values: true, false
+testable: false
+
+# Team members contributing to the project (required)
+# Items:
+# - github: GitHub user name
+#   id: Internal team identifier/user name
+#   role: Team member's role; leads should be designated as 'lead'
+team:
+- github: mbland
+  role: lead
+
+# Technologies used to build the project
+stack:
+- Ruby
+
+# Licenses that apply to the project and/or its components (required)
+# Items by property name pattern:
+#   .*:
+#     name: Name of the license from the Software Package Data Exchange (SPDX): https://spdx.org/licenses/
+#     url: URL for the text of the license
+licenses:
+  lambda_map_reduce:
+    name: CC0
+    url: https://github.com/18F/lambda_map_reduce/blob/master/LICENSE.md
+
+# Links to project artifacts
+# Items:
+# - url: URL for the link
+#   text: Anchor text for the link
+links:
+-  url: https://rubygems.org/gems/lambda_map_reduce
+   text: lambda_map_reduce Ruby gem
+
+# Email addresses of points-of-contact
+contact:
+- michael.bland@gsa.gov 
